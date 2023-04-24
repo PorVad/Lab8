@@ -1,0 +1,49 @@
+.navbar{
+  font-family: Verdana;
+  background: cornflowerblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar *{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul{
+  display: none;
+  position: absolute;
+  top: -20px;
+  transition: all 5ms ease;
+}
+
+.navbar li{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.navbar li a{
+  display: table-cell;
+  min-width: 200px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar li:hover{
+  background-color: orange;
+}
+
+.navbar ul li:hover{
+  background-color: cornflowerblue;
+}
+
+.navbar li:hover ul{
+  display: block;
+  top: 40px;
+  background-color: orange;
+}
